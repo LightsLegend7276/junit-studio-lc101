@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705a5edb-1f12-41a3-a9da-d103c200797d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/BonusBinarySearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593726557034</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Class 5 unit test bonus mission complete. Refactored binary search method and wrote new method which does the same action in fewer lines of code.">
+      <created>1593726714390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593726714390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,10 +214,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="213" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593715472197" />
-    <state x="245" y="0" key="CommitChangelistDialog2" timestamp="1593726555720">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1593726713427">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="245" y="0" key="CommitChangelistDialog2/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593726555720" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593726713427" />
     <state x="93" y="93" width="1181" height="685" key="DiffContextDialog" timestamp="1593715211555">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -248,10 +254,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state width="1325" height="220" key="GridCell.Tab.1.right/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593726128248" />
-    <state x="277" y="151" key="Vcs.Push.Dialog.v2" timestamp="1593726559241">
+    <state x="277" y="151" key="Vcs.Push.Dialog.v2" timestamp="1593726715670">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="151" key="Vcs.Push.Dialog.v2/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593726559241" />
+    <state x="277" y="151" key="Vcs.Push.Dialog.v2/0.0.1368.872/423.-1080.1536.824@0.0.1368.872" timestamp="1593726715670" />
     <state x="456" y="211" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593715478120">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
