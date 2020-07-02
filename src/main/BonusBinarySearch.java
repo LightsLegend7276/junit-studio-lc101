@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Arrays;
+
 public class BonusBinarySearch {
 
     /**
@@ -14,17 +16,33 @@ public class BonusBinarySearch {
     public static int binarySearch(int[] sortedNumbers, int n) {
         int right = sortedNumbers.length - 1;
         int left = 0;
-        while (right >= left) {
-            int mid = left + ((right - left) / 2);
-            if (sortedNumbers[mid] > n) {
-                right = mid;
-            } else if (sortedNumbers[mid] < n) {
-                left = mid;
-            } else {
-                return mid;
+        int result = -1;
+        Arrays.sort(sortedNumbers);
+        if (n == sortedNumbers[0]) {
+            result = 0;
+        } else if (n == sortedNumbers[sortedNumbers.length-1]) {
+            result = sortedNumbers.length-1;
+        } else if (n < sortedNumbers[0] || n > sortedNumbers[sortedNumbers.length-1]) {
+            return result;
+        } else {
+            while (right - left > 1) {
+                int mid = left + (right - left == 1 ? 1 : (right - left) / 2);
+                if (sortedNumbers[mid] > n) {
+                    right = mid;
+                } else if (sortedNumbers[mid] < n) {
+                    left = mid;
+                } else {
+                    result = mid;
+                    break;
+                }
             }
         }
-        return -1;
+        return result;
     }
 
+    public static int indexSearch(int[] sortedNumbers, int n) {
+        Arrays.sort(sortedNumbers);
+        Integer[] copyOfNumbers = Arrays.stream( sortedNumbers ).boxed().toArray( Integer[]::new );
+        return Arrays.asList(copyOfNumbers).indexOf(n);
+    }
 }
