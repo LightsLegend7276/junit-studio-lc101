@@ -26,32 +26,19 @@ public class BalancedBrackets {
      * @return true if balanced, false otherwise
      */
     public static boolean hasBalancedBrackets(String str) {
-//        int brackets = 0;
-        boolean result = true;
-        if (str.equals("")) {
-            return true;
-        }
-        if (str.indexOf("]") < str.indexOf("[") || str.lastIndexOf('[') > str.lastIndexOf(']')
-                || !str.contains("[") || !str.contains("]")) {
-            result = false;
-        }
-        char[] chars = str.toCharArray();
-        List<Integer> bracketArray = new LinkedList<>();
-//        for (char ch : str.toCharArray()) {
-        for (char aChar : chars) {
-            if (aChar == ('[')) {
-                bracketArray.add(0);
-//                brackets++;
-            } else if (aChar == ']') {
-                bracketArray.add(1);
-//                brackets--;
-            }
-        }
-        for (int i= 0; i < bracketArray.size() - 1; i++) {
-            if (bracketArray.get(i).equals(bracketArray.get(i + 1))) {
+
+        int brackets = 0;
+        for (char ch : str.toCharArray()) {
+            if (brackets >= 0) {
+                if (ch == '[') {
+                    brackets ++;
+                } else if (ch == ']') {
+                    brackets --;
+                }
+            } else {
                 return false;
             }
         }
-        return result;
+        return brackets == 0;
     }
 }

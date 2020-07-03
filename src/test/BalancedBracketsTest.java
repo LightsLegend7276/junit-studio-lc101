@@ -20,6 +20,7 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets(""));
         assertTrue(BalancedBrackets.hasBalancedBrackets("[LaunchCode]"));
         assertTrue(BalancedBrackets.hasBalancedBrackets("Launch[Code]"));
+        assertTrue(BalancedBrackets.hasBalancedBrackets("LaunchCode"));
     }
 
     @Test
@@ -50,6 +51,12 @@ public class BalancedBracketsTest {
     public void multipleBalancedBracketsFalse() {
         assertFalse(BalancedBrackets.hasBalancedBrackets("[]]["));
         assertFalse(BalancedBrackets.hasBalancedBrackets("[L][a][u][n][c]][[h][C][o][d][e]"));
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[]][[]"));
     }
 
+    @Test
+    public void nestedReturnsTrue() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[[][][][][]]"));
+
+    }
 }
